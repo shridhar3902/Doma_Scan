@@ -1,6 +1,11 @@
 """Setup configuration for DomaScan."""
 
-from setuptools import setup, find_packages
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    print("Error: 'setuptools' is not installed. Please run 'pip install setuptools' or 'pip install -r requirements.txt' first.")
+    import sys
+    sys.exit(1)
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -9,14 +14,14 @@ setup(
     name="domascan",
     version="2.0.0",
     author="Shridhar Kirtane",
-    author_email="shridharkirtane@example.com",
+    author_email="shridhar3902@example.com",
     description="CLI-based OSINT domain intelligence tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/shridharkirtane/DomaScan",
+    url="https://github.com/shridhar3902/DomaScan",
     project_urls={
-        "Bug Tracker": "https://github.com/shridharkirtane/DomaScan/issues",
-        "Source Code": "https://github.com/shridharkirtane/DomaScan",
+        "Bug Tracker": "https://github.com/shridhar3902/DomaScan/issues",
+        "Source Code": "https://github.com/shridhar3902/DomaScan",
     },
     packages=find_packages(),
     python_requires=">=3.8",

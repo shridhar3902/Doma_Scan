@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to **DomaScan**! Contributions are welcome and appreciated. This document provides guidelines and instructions for contributing to this project.
 
-**Project Maintainer:** [Shridhar Kirtane](https://github.com/shridharkirtane)
+**Project Maintainer:** [Shridhar Kirtane](https://github.com/shridhar3902)
 
 ---
 
@@ -25,7 +25,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
 
 ## How to Report Bugs
 
-If you find a bug, please open a [GitHub Issue](https://github.com/shridharkirtane/DomaScan/issues) with the following information:
+If you find a bug, please open a [GitHub Issue](https://github.com/shridhar3902/DomaScan/issues) with the following information:
 
 1. **Description** — A clear and concise description of the bug.
 2. **Steps to Reproduce** — Detailed steps to reproduce the behavior.
@@ -42,7 +42,7 @@ If you find a bug, please open a [GitHub Issue](https://github.com/shridharkirta
 
 We welcome feature ideas! To suggest a feature:
 
-1. Open a [GitHub Issue](https://github.com/shridharkirtane/DomaScan/issues) with the **"Feature Request"** label.
+1. Open a [GitHub Issue](https://github.com/shridhar3902/DomaScan/issues) with the **"Feature Request"** label.
 2. Describe the feature and the problem it solves.
 3. Provide any relevant examples, mockups, or references.
 4. Explain why this feature would be valuable to DomaScan users.

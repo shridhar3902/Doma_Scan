@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>Developed by <a href="https://github.com/shridharkirtane">Shridhar Kirtane</a></strong>
+  <strong>Developed by <a href="https://github.com/shridhar3902">Shridhar Kirtane</a></strong>
 </p>
 
 ---
@@ -56,7 +56,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/shridharkirtane/DomaScan.git
+git clone https://github.com/shridhar3902/DomaScan.git
 cd DomaScan
 
 # Install dependencies
@@ -74,7 +74,7 @@ pip install .
 
 ```bash
 sudo apt update && sudo apt install -y python3 python3-pip
-git clone https://github.com/shridharkirtane/DomaScan.git
+git clone https://github.com/shridhar3902/DomaScan.git
 cd DomaScan
 pip3 install -r requirements.txt
 ```
@@ -249,7 +249,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Shridhar Kirtane**
 
-- GitHub: [@shridharkirtane](https://github.com/shridharkirtane)
+- GitHub: [@shridhar3902](https://github.com/shridhar3902)
 
 ---
 
