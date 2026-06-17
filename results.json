@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "tool": "DomaScan",
+    "version": "2.0.0",
+    "author": "Shridhar Kirtane",
+    "timestamp": "2026-06-17T20:31:32.058284",
+    "scan_duration_seconds": 122.23
+  },
+  "target": {
+    "domain": "example.com",
+    "ip": "172.66.147.243"
+  },
+  "subdomains": {
+    "total": 2,
+    "valid": 1,
+    "invalid": 1,
+    "entries": {
+      "2fwww.example.com": "INVALID",
+      "www.example.com": "VALID"
+    }
+  },
+  "emails": {
+    "total": 0,
+    "entries": []
+  },
+  "dns_records": {
+    "A": [
+      "104.20.23.154",
+      "172.66.147.243"
+    ],
+    "MX": [
+      "0 "
+    ],
+    "NS": [
+      "elliott.ns.cloudflare.com",
+      "hera.ns.cloudflare.com"
+    ],
+    "AAAA": [
+      "2606:4700:9ae5:72db:f2de:1027:ef6b:ff98"
+    ],
+    "TXT": [
+      "_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9",
+      "v=spf1 -all"
+    ],
+    "SOA": [
+      "elliott.ns.cloudflare.com. dns.cloudflare.com. (serial=2405749864)"
+    ],
+    "CNAME": []
+  },
+  "whois": {
+    "registrar": "RESERVED-Internet Assigned Numbers Authority",
+    "creation_date": "1995-08-14",
+    "expiration_date": "2026-08-13",
+    "name_servers": [
+      "elliott.ns.cloudflare.com",
+      "hera.ns.cloudflare.com"
+    ],
+    "registrant_org": "N/A",
+    "registrant_country": "N/A",
+    "dnssec": "signedDelegation"
+  },
+  "technologies": {
+    "web_server": [
+      "Cloudflare"
+    ],
+    "cms": [],
+    "js_frameworks": [],
+    "cdn": [
+      "Cloudflare"
+    ],
+    "security_headers": [],
+    "analytics": [],
+    "language": []
+  },
+  "open_ports": [
+    {
+      "port": 80,
+      "service": "HTTP",
+      "state": "open"
+    },
+    {
+      "port": 443,
+      "service": "HTTPS",
+      "state": "open"
+    },
+    {
+      "port": 8080,
+      "service": "HTTP-Proxy",
+      "state": "open"
+    },
+    {
+      "port": 8443,
+      "service": "HTTPS-Alt",
+      "state": "open"
+    }
+  ],
+  "wayback": {
+    "total_urls": 0,
+    "first_seen": "N/A",
+    "last_seen": "N/A",
+    "unique_subdomains_count": 0
+  },
+  "ssl": {
+    "issuer": "SSL Corporation (Cloudflare TLS Issuing ECC CA 3)",
+    "subject": "example.com",
+    "serial_number": "1AA73FEA257BE3334B9A29552E6F878E",
+    "version": 3,
+    "not_before": "2026-05-31",
+    "not_after": "2026-08-29",
+    "signature_algorithm": "N/A",
+    "grade": "A",
+    "days_until_expiry": 73,
+    "san_count": 2
+  },
+  "warnings": [
+    "crt.sh request failed after retries",
+    "Wayback Machine CDX API returned no data"
+  ],
+  "status": "PARTIAL"
+}

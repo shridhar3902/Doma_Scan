@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DomaScan Report — example.com</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+    --green: #3fb950; --red: #f85149; --yellow: #d29922;
+    --purple: #bc8cff; --cyan: #39d2c0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg); color: var(--text);
+    line-height: 1.6; padding: 2rem;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .header {
+    text-align: center; padding: 2.5rem 1rem;
+    background: linear-gradient(135deg, #1a1e2e 0%, #0d1117 100%);
+    border: 1px solid var(--border); border-radius: 16px;
+    margin-bottom: 2rem;
+  }
+  .header h1 { font-size: 2.4rem; color: var(--accent); margin-bottom: 0.3rem; }
+  .header .subtitle { color: var(--muted); font-size: 1rem; }
+  .header .meta { color: var(--muted); font-size: 0.85rem; margin-top: 1rem; }
+  .stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem; margin-bottom: 2rem;
+  }
+  .stat-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.2rem; text-align: center;
+  }
+  .stat-card .number { font-size: 2rem; font-weight: 700; color: var(--accent); }
+  .stat-card .label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .section {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;
+  }
+  .section h2 {
+    font-size: 1.2rem; color: var(--accent); margin-bottom: 1rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td {
+    padding: 0.6rem 0.8rem; text-align: left;
+    border-bottom: 1px solid var(--border); font-size: 0.9rem;
+  }
+  th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+  .valid { color: var(--green); font-weight: 600; }
+  .invalid { color: var(--red); font-weight: 600; }
+  .open { color: var(--green); }
+  .tag {
+    display: inline-block; padding: 0.2rem 0.6rem; border-radius: 6px;
+    font-size: 0.8rem; margin: 0.15rem;
+    background: rgba(88,166,255,0.15); color: var(--accent);
+  }
+  .tag.security { background: rgba(63,185,80,0.15); color: var(--green); }
+  .tag.warning { background: rgba(210,153,34,0.15); color: var(--yellow); }
+  .grade { font-size: 2rem; font-weight: 700; }
+  .grade-A { color: var(--green); } .grade-B { color: var(--yellow); }
+  .grade-C { color: var(--yellow); } .grade-F { color: var(--red); }
+  .footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  .empty { color: var(--muted); font-style: italic; }
+  ul { list-style: none; }
+  ul li { padding: 0.3rem 0; }
+  ul li::before { content: "›"; color: var(--accent); font-weight: bold; margin-right: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🔍 DomaScan Report</h1>
+    <div class="subtitle">Domain Intelligence for <strong>example.com</strong></div>
+    <div class="meta">
+      Generated on 2026-06-17 20:31:32 &bull; Scan duration: 122.23s &bull; Status: PARTIAL
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card"><div class="number">2</div><div class="label">Subdomains</div></div>
+    <div class="stat-card"><div class="number">0</div><div class="label">Emails</div></div>
+    <div class="stat-card"><div class="number">9</div><div class="label">DNS Records</div></div>
+    <div class="stat-card"><div class="number">4</div><div class="label">Open Ports</div></div>
+    <div class="stat-card"><div class="number">2</div><div class="label">Technologies</div></div>
+  </div>
+
+  <div class="section"><h2>🌐 Subdomains (2)</h2>
+    <table><tr><th>Subdomain</th><th>Status</th></tr><tr><td>2fwww.example.com</td><td class="invalid">INVALID</td></tr><tr><td>www.example.com</td><td class="valid">VALID</td></tr></table></div><div class="section"><h2>📧 Emails</h2><p class="empty">No emails discovered.</p></div><div class="section"><h2>📡 DNS Records</h2>
+    <table><tr><th>Type</th><th>Value</th></tr><tr><td>A</td><td>104.20.23.154</td></tr><tr><td>A</td><td>172.66.147.243</td></tr><tr><td>AAAA</td><td>2606:4700:9ae5:72db:f2de:1027:ef6b:ff98</td></tr><tr><td>MX</td><td>0 </td></tr><tr><td>NS</td><td>elliott.ns.cloudflare.com</td></tr><tr><td>NS</td><td>hera.ns.cloudflare.com</td></tr><tr><td>SOA</td><td>elliott.ns.cloudflare.com. dns.cloudflare.com. (serial=2405749864)</td></tr><tr><td>TXT</td><td>_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9</td></tr><tr><td>TXT</td><td>v=spf1 -all</td></tr></table></div><div class="section"><h2>📋 WHOIS Information</h2>
+    <table><tr><th>Field</th><th>Value</th></tr><tr><td>Registrar</td><td>RESERVED-Internet Assigned Numbers Authority</td></tr><tr><td>Creation Date</td><td>1995-08-14</td></tr><tr><td>Expiration Date</td><td>2026-08-13</td></tr><tr><td>Name Servers</td><td>[&#x27;elliott.ns.cloudflare.com&#x27;, &#x27;hera.ns.cloudflare.com&#x27;]</td></tr><tr><td>Registrant Org</td><td>N/A</td></tr><tr><td>Registrant Country</td><td>N/A</td></tr><tr><td>Dnssec</td><td>signedDelegation</td></tr></table></div><div class="section"><h2>🛠️ Technologies Detected</h2><p><strong>Web Server:</strong> <span class="tag">Cloudflare</span></p><p><strong>Cdn:</strong> <span class="tag">Cloudflare</span></p></div><div class="section"><h2>🔌 Open Ports</h2><p>Target IP: <strong>172.66.147.243</strong></p>
+    <table><tr><th>Port</th><th>Service</th><th>State</th></tr><tr><td>80</td><td>HTTP</td><td class="open">OPEN</td></tr><tr><td>443</td><td>HTTPS</td><td class="open">OPEN</td></tr><tr><td>8080</td><td>HTTP-Proxy</td><td class="open">OPEN</td></tr><tr><td>8443</td><td>HTTPS-Alt</td><td class="open">OPEN</td></tr></table></div><div class="section"><h2>🔒 SSL/TLS Certificate</h2>
+    <p>Grade: <span class="grade grade-A">A</span></p>
+    <table><tr><th>Field</th><th>Value</th></tr><tr><td>Issuer</td><td>SSL Corporation (Cloudflare TLS Issuing ECC CA 3)</td></tr><tr><td>Subject</td><td>example.com</td></tr><tr><td>Not Before</td><td>2026-05-31</td></tr><tr><td>Not After</td><td>2026-08-29</td></tr><tr><td>Days Until Expiry</td><td>73</td></tr><tr><td>Serial Number</td><td>1AA73FEA257BE3334B9A29552E6F878E</td></tr><tr><td>Signature Algorithm</td><td>N/A</td></tr></table></div><div class="section"><h2>🕰️ Wayback Machine History</h2>
+    <table><tr><th>Metric</th><th>Value</th></tr><tr><td>Total Urls</td><td>0</td></tr><tr><td>Unique Subdomains Count</td><td>0</td></tr><tr><td>First Seen</td><td>N/A</td></tr><tr><td>Last Seen</td><td>N/A</td></tr></table></div><div class="section"><h2>⚠️ Warnings</h2><ul><li><span class="tag warning">crt.sh request failed after retries</span></li><li><span class="tag warning">Wayback Machine CDX API returned no data</span></li></ul></div>
+
+  <div class="footer">
+    DomaScan v2.0.0 &bull; Developed by Shridhar Kirtane &bull; 
+    <a href="https://github.com/shridhar3902/DomaScan" style="color:var(--accent);text-decoration:none;">GitHub</a>
+  </div>
+</div>
+</body>
+</html>
