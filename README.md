@@ -237,6 +237,27 @@ DomaScan/
 
 ---
 
+## 🛠️ Troubleshooting
+
+### `[CRITICAL ERROR] Python cannot find the 'modules' directory`
+
+If you encounter this error when running `python domascan.py`:
+```text
+[CRITICAL ERROR] Python cannot find the 'modules' directory.
+Expected to find it here: /path/to/DomaScan/modules
+```
+**Cause:** DomaScan is a multi-file tool and requires the `modules/` and `utils/` directories to run. This error means you likely downloaded only the `domascan.py` script instead of cloning the full repository.
+
+**Fix:** Delete your incomplete folder and clone the entire repository from scratch:
+```bash
+git clone https://github.com/shridhar3902/DomaScan.git
+cd DomaScan
+pip install -r requirements.txt
+python domascan.py --help
+```
+
+---
+
 ## ⚠️ Legal Disclaimer
 
 DomaScan is designed for **authorized security testing** and **educational purposes** only. All data sources used are **publicly available**. Always ensure you have proper authorization before scanning any domain. The author is not responsible for any misuse of this tool.
