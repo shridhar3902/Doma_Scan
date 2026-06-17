@@ -59,6 +59,10 @@
 git clone https://github.com/shridhar3902/DomaScan.git
 cd DomaScan
 
+# Create and activate a Python virtual environment (Recommended)
+python3 -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -73,10 +77,16 @@ pip install .
 ### Kali Linux
 
 ```bash
-sudo apt update && sudo apt install -y python3 python3-pip
+sudo apt update && sudo apt install -y python3 python3-pip python3-venv
 git clone https://github.com/shridhar3902/DomaScan.git
 cd DomaScan
-pip3 install -r requirements.txt
+
+# Create and activate a virtual environment (required on modern Kali)
+python3 -m venv venv
+source venv/bin/activate
+
+pip install setuptools
+pip install -r requirements.txt
 ```
 
 ---
